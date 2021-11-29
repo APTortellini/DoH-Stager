@@ -1,6 +1,6 @@
 # DoH-Stager
 
-###### Diahane-Oh-Stager - Common tuscanian expression of disappointment 
+###### Diahane-Oh-Stager - Common Tuscanian Expression of Disappointment 
 
 DoH-Stager is an expansion of the awesome [DNSStager](https://github.com/mhaskar/DNSStager) tool made by [@mohammadaskar2](https://twitter.com/mohammadaskar2). DoH-Stager is aimed at providing the same functionalities as the original version, but using DNS-over-HTTPS instead of classic DNS. 
 
