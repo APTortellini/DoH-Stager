@@ -87,4 +87,3 @@ And the only thing that was changed in the original server's python script was t
 ## Other Notes
 
 * This tool is not great in terms of performance. In fact, to download a fully stageless Cobalt Strike beacon might take approximately one hour wilst genertaing a lot of traffic. Use at your own risk.
-* 
